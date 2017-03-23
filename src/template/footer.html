@@ -15,7 +15,7 @@
 
       <div class="col-lg-3">
 
-        <div class="page-footer__vk"></div>
+        <div class="page-footer__vk"  id="vk_groups"></div>
 
       </div>
 
@@ -28,31 +28,31 @@
           <ul>
 
             <li>
-              <a href="">Главная</a>
+              <a href="" id="main-link">Главная</a>
             </li>
 
             <li>
-              <a href="">Что такое диск-гольф?</a>
+              <a href="" id="about-link">Что такое диск-гольф?</a>
             </li>
 
             <li>
-              <a href="">Условия</a>
+              <a href="" id="conditions-link">Условия</a>
             </li>
 
             <li>
-              <a href="">Отзывы</a>
+              <a href="" id="feedback-link">Отзывы</a>
             </li>
 
             <li>
-              <a href="">Место проведения</a>
+              <a href="" id="place-link">Место проведения</a>
             </li>
 
             <li>
-              <a href="">Партнеры</a>
+              <a href="" id="partners-link">Партнеры</a>
             </li>
 
             <li>
-              <a href="">Регистрация</a>
+              <a href="" class="registration-button">Регистрация</a>
             </li>
 
           </ul>
@@ -65,7 +65,7 @@
 
       <div class="col-lg-3">
 
-        <div class="page-footer__made-by">Сделано в <a href="" class="capybara-logo"></a></div>
+        <div class="page-footer__made-by">Сделано в <a  href="http://capybaracraft.ru/?utm_source=disc-golf&utm_medium=footer" target="_blank" class="capybara-logo">Capybara-craft</a></div>
 
       </div>
 
@@ -75,6 +75,83 @@
 
 
 </footer>
+
+<section class="page-popup">
+
+  <div class="popup-bg"></div>
+
+  <div class="popup">
+
+    <h2 class="popup__title">Форма регистрации</h2>
+
+    <form action="" method="POST">
+
+      <div class="popup__input popup__input_text">
+        <input type="text" name="name" placeholder="Ваше имя" required="required">
+      </div>
+
+      <div class="popup__input popup__input_tel">
+        <input type="tel" name="telephone" placeholder="Ваш телефон" required="required">
+      </div>
+
+      <div class="popup__input popup__input_email">
+        <input type="email" name="email" placeholder="Ваш e-mail" required="required">
+      </div>
+
+      <div class="popup__input popup__input_checkbox">
+        <input type="checkbox" name="participant" value="can't" id="check">
+        <label for="check">Не могу участвовать 22 апреля. Сообщите мне о следующем турнире.</label>
+      </div>
+
+      <div class="popup__button">
+        <button type="submit" class="button">Зарегистрироваться</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script><![endif]-->
+
+<!— Yandex.Metrika counter —>
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter37317210 = new Ya.Metrika({
+id:37317210,
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+} catch(e) { }
+});
+
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37317210" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!— /Yandex.Metrika counter —>
+
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?142"></script>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 1, width: "200"}, 92922140);
+</script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

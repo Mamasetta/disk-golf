@@ -481,6 +481,11 @@ body, html {
       border-bottom: 2px solid #d5d5d5;
       background: none;
       width: 310px;
+
+      &:focus,
+      &active {
+        outline: none;
+      }
     }
 
     &::before {
@@ -679,6 +684,7 @@ body, html {
     background-color: #444;
     transform: rotate(45deg);
     cursor: pointer;
+    z-index: 100;
 
     &::before {
       content: '';
